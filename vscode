@@ -1,3 +1,11 @@
+code --install-extension ( | )
+code --list-extensions
+
+CMake
+mkdir build
+(cd build; cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=YES ..)
+ln -s build/compile_commands.json
+
 alefragnani.Bookmarks
 alefragnani.project-manager
 austin.code-gnu-global
