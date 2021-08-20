@@ -1,6 +1,8 @@
 code --install-extension ( | )
 code --list-extensions
+--disable-telemetry --disable-updates  --port 8080 --host xxx&
 --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=https://xxx:8081  --user-data-dir=D:\tmp\chrome
+ssh -g -f -N -L 
 CMake
 mkdir build
 (cd build; cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=YES ..)
