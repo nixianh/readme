@@ -1,5 +1,5 @@
 # ssh PortForwarding
 https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 ssh -g -f -N -L 
-
+ssh -g -N -f -D 0.0.0.0:1081 10.8.0.2
 proxychains4 -f /etc/proxychains_socks.conf 
