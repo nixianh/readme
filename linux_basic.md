@@ -18,4 +18,5 @@ c.NotebookApp.port = 18080
 c.MappingKernelManager.root_dir = '/home/hua/.jupyter_run/root' 
 
 # docker
+sudo usermod -aG docker $USER
 docker run -tid -v /usr:/usr -v /home/:/home -v /etc/localtime:/etc/localtime  -p 5024:22 -e POD_NODE_NAME=10.154.243.240  --privileged=true --name build_usr2 xxxx /bin/bash
