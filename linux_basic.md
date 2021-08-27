@@ -22,9 +22,9 @@ sudo usermod -aG docker $USER
 docker run -tid -v /usr:/usr -v /home/:/home -v /etc/localtime:/etc/localtime  -p 5024:22 -e POD_NODE_NAME=10.154.243.240  --privileged=true --name build_usr2 xxxx /bin/bash
 
 # cachefilesd
-https://blog.csdn.net/luckytanggu/article/details/78476634
-sudo aptitude  install cachefilesd
-cat /etc/cachefilesd.conf  --delete selinux
-/etc/default/cachefilesd  ---set run=yes
-systemctl restart cachefilesd
-mount -t nfs -o fsc
+https://blog.csdn.net/luckytanggu/article/details/78476634  
+sudo aptitude  install cachefilesd  
+cat /etc/cachefilesd.conf  --delete selinux 
+/etc/default/cachefilesd  ---set run=yes  
+systemctl restart cachefilesd 
+mount -t nfs -o fsc 
