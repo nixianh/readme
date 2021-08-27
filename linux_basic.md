@@ -23,8 +23,10 @@ docker run -tid -v /usr:/usr -v /home/:/home -v /etc/localtime:/etc/localtime  -
 
 # cachefilesd
 https://blog.csdn.net/luckytanggu/article/details/78476634  
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/getting-started-with-fs-cache_managing-file-systems
 sudo aptitude  install cachefilesd  
 cat /etc/cachefilesd.conf  --delete selinux 
 /etc/default/cachefilesd  ---set run=yes  
 systemctl restart cachefilesd 
 mount -t nfs -o fsc 
+
