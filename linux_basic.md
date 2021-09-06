@@ -53,6 +53,7 @@ rdfind -dryrun true /Image
 rdfind -makehardlinks true /Image
 rdfind -ignoreempty true /Image
  rdfind -deleteduplicates true /Image
- rdfind -deleteduplicates true -ignoreempty false /Image
+ rdfind -deleteduplicates true -ignoreempty false /Imagefind . -maxdepth 1 -type d -empty -exec rm -rf {} \;
+ 
 ```
 https://cloud.tencent.com/developer/article/1450299
