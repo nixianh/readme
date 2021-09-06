@@ -22,21 +22,21 @@ sudo usermod -aG docker $USER
 docker run -tid -v /usr:/usr -v /home/:/home -v /etc/localtime:/etc/localtime  -p 5024:22 -e POD_NODE_NAME=10.154.243.240  --privileged=true --name build_usr2 xxxx /bin/bash
 
 # cachefilesd
-https://blog.csdn.net/luckytanggu/article/details/78476634  
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/getting-started-with-fs-cache_managing-file-systems 
-sudo aptitude  install cachefilesd  
+https://blog.csdn.net/luckytanggu/article/details/78476634   
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/getting-started-with-fs-cache_managing-file-systems  
+sudo aptitude  install cachefilesd   
 cat /etc/cachefilesd.conf  --delete selinux 
-/etc/default/cachefilesd  ---set run=yes  
-systemctl restart cachefilesd 
-mount -t nfs -o fsc 
+/etc/default/cachefilesd  ---set run=yes   
+systemctl restart cachefilesd  
+mount -t nfs -o fsc  
 
 # backup
-BorgBackup
- borg init  -e none ~/borg_back/borg_sample
- borg create --stats ~/borg_back/borg_sample::first ~/workspace
- borg list ~/borg_back/borg_sample::first
- borg extract --list ~/borg_back/borg_sample::first
- rsync -avzP <repo-name> <remote-matchine>
+BorgBackup 
+ borg init  -e none ~/borg_back/borg_sample 
+ borg create --stats ~/borg_back/borg_sample::first ~/workspace 
+ borg list ~/borg_back/borg_sample::first 
+ borg extract --list ~/borg_back/borg_sample::first 
+ rsync -avzP <repo-name> <remote-matchine> 
 
 https://wzyboy.im/post/1106.html
 https://www.jibing57.com/2019/09/24/backup-tools-borgbackup/ 
