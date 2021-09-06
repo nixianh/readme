@@ -36,7 +36,7 @@ BorgBackup
  borg create --stats ~/borg_back/borg_sample::first ~/workspace
  borg list ~/borg_back/borg_sample::first
  borg extract --list ~/borg_back/borg_sample::first
- rsync -avz <repo-name> <remote-matchine>
+ rsync -avzP <repo-name> <remote-matchine>
 
 https://wzyboy.im/post/1106.html
 https://www.jibing57.com/2019/09/24/backup-tools-borgbackup/ 
