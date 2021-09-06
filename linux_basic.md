@@ -40,8 +40,16 @@ BorgBackup
  borg list ~/borg_back/borg_sample::first 
  borg extract --list ~/borg_back/borg_sample::first 
  rsync -avzP <repo-name> <remote-matchine> 
+ rsync -avzP --delete 
 ```
 https://wzyboy.im/post/1106.html
 https://www.jibing57.com/2019/09/24/backup-tools-borgbackup/ 
 https://bitsflow.org/amp/get-started/using-borgbackup/
 https://zhuanlan.zhihu.com/p/60404181
+
+### fdfind
+```bash
+rdfind -dryrun true /Image
+rdfind -makehardlinks true /Image
+rdfind -ignoreempty true /Image
+```
