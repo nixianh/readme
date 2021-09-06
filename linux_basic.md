@@ -52,4 +52,7 @@ https://zhuanlan.zhihu.com/p/60404181
 rdfind -dryrun true /Image
 rdfind -makehardlinks true /Image
 rdfind -ignoreempty true /Image
+ rdfind -deleteduplicates true /Image
+ rdfind -deleteduplicates true -ignoreempty false /Image
 ```
+https://cloud.tencent.com/developer/article/1450299
