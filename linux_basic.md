@@ -19,9 +19,10 @@ c.NotebookApp.port = 18080
 c.MappingKernelManager.root_dir = '/home/hua/.jupyter_run/root' 
 ```
 # docker
+```bash
 sudo usermod -aG docker $USER
 docker run -tid -v /usr:/usr -v /home/:/home -v /etc/localtime:/etc/localtime  -p 5024:22 -e POD_NODE_NAME=10.154.243.240  --privileged=true --name build_usr2 xxxx /bin/bash
-
+```
 # cachefilesd
 https://blog.csdn.net/luckytanggu/article/details/78476634   
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/getting-started-with-fs-cache_managing-file-systems  
