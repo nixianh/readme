@@ -57,3 +57,7 @@ rdfind -ignoreempty true /Image
  
 ```
 https://cloud.tencent.com/developer/article/1450299
+
+
+# nas
+https://nextfe.com/opensource-nas-build/
