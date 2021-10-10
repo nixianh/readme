@@ -1,3 +1,4 @@
+```
 code --install-extension ( | )
 code --list-extensions
 --disable-telemetry --disable-updates  --port 8080 --host xxx&
@@ -64,3 +65,4 @@ wayou.vscode-todo-highlight
 wholroyd.jinja
 yigitozgumus.NbConverter
 yzhang.markdown-all-in-one
+```
