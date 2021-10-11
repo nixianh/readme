@@ -62,3 +62,29 @@ https://cloud.tencent.com/developer/article/1450299
 # nas
 webmin
 https://nextfe.com/opensource-nas-build/
+next terminal
+
+# rdp
+```
+apt install xrdp mate-core vnc4server xbase-clients dconf-editor
+
+echo mate-session> ~/.xsession #can ignore
+sudo ufw allow 3389/tcp
+
+sudo vim /etc/xrdp/startwm.sh
+ 
+在. /etc/X11/Xsession 前一行插入,并注释掉该行
+mate-session加入
+reboot
+
+x client中文显示
+export XMODIFIERS=@im=ibus;
+export GTK_IM_MODULE=ibus;
+export GDM_KEYBOARD_LAYOUT=us;
+export GDM_LANG=zh_CN.UTF-8;
+export LANG=zh_CN.UTF-8;
+export LC_TYPE=zh_CN.UTF-8;
+/usr/bin/ibus-daemon -drx
+
+ibus-setup ---config ibus
+```
